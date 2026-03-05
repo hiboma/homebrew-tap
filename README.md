@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/tap_icon.png" width="150" alt="hiboma/tap icon" />
+</p>
+
 # hiboma/tap
 
 Homebrew tap for tools by [@hiboma](https://github.com/hiboma).
