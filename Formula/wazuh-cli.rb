@@ -7,7 +7,7 @@ class WazuhCli < Formula
   on_macos do
     on_arm do
       url "https://github.com/hiboma/wazuh-cli/releases/download/v#{version}/wazuh-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "d8a4b2dc6e60550041b56e00cf4e762eea70aaf048d6360e42b4c18e0114adab"
+      sha256 "1234531622ca084ab1cda9cbd733ce8874e37dbd519d7db00558920ca82f3421"
     end
 
     on_intel do
