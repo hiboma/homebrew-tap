@@ -16,7 +16,7 @@ brew tap hiboma/tap
 
 | Formula | Description | Version |
 |---------|-------------|---------|
-| [cloudapps-cli](https://github.com/hiboma/cloudapps-cli) | A CLI tool for cloudapps | 0.4.0 |
+| [cloudapps-cli](https://github.com/hiboma/cloudapps-cli) | A CLI tool for cloudapps | 0.4.1 |
 | [cql-lint](https://github.com/hiboma/cql-lint) | A linter for CrowdStrike LogScale (CQL) | 0.1.1 |
 | [falcon-cli](https://github.com/hiboma/falcon-cli) | A CLI tool for CrowdStrike Falcon API | 0.3.0 |
 | [mde-cli](https://github.com/hiboma/microsoft-defender-for-endpoint-cli) | A command-line tool for Microsoft Defender for Endpoint, written in Rust | 0.2.0 |
