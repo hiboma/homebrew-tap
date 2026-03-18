@@ -1,30 +1,30 @@
 class CloudappsCli < Formula
   desc "A CLI tool for cloudapps"
   homepage "https://github.com/hiboma/cloudapps-cli"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/hiboma/cloudapps-cli/releases/download/v#{version}/cloudapps-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "9f8f0fe337006d181b861b62f07bde12d0a50a2c84ea56c7351baed10230486c"
+      sha256 "81aee13eddcf383810b1cf92e646b2c16c950fd9af5fb56e7a213ab19d09a7b6"
     end
 
     on_intel do
       url "https://github.com/hiboma/cloudapps-cli/releases/download/v#{version}/cloudapps-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "98760f456534a95bfe59abefe1bda0d9bd447651fb49b1dd9a24c464c202b957"
+      sha256 "0a289ca0e4e3d22f86e518a47f468d07569c4249697e7ff137254ddf69504f24"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/hiboma/cloudapps-cli/releases/download/v#{version}/cloudapps-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "afbc63ff460f3de01d285a88ccd67e577edc769a5ff2318277ac84cd9d99c55b"
+      sha256 "00178a3f8f18c446c65c7d99bbfdf2c68984afab95b17a8a91eb7d59c97c21a9"
     end
 
     on_intel do
       url "https://github.com/hiboma/cloudapps-cli/releases/download/v#{version}/cloudapps-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "48323cc57ac70e126f3af04c558d0147f62c8d4df37a8dd7fdef02aad688ab56"
+      sha256 "e1c24cf6c50c6554411dc9609cf78820501d0d3a9cdeb9e2f2900ebfc24f8bf8"
     end
   end
 
