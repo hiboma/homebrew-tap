@@ -1,30 +1,30 @@
 class MdeCli < Formula
   desc "A command-line tool for Microsoft Defender for Endpoint, written in Rust"
   homepage "https://github.com/hiboma/microsoft-defender-for-endpoint-cli"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v#{version}/mde-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "8a5a418eaa12c657d99e81afe27b9cf4a6e5ab12270c89ee0ce589c8400c3e72"
+      sha256 "5807852794e0e5b0b260adba5b14b4ab6c624e72d7817972f8e8e69804153949"
     end
 
     on_intel do
       url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v#{version}/mde-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "2f786a61e1857aae542fa7deef55834700c00b4d63abe5f5fdb602181074b191"
+      sha256 "a71f4ce6772d4d98d72789b0cc79be1685f3b83153a27cd6b2795c1c32b42567"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v#{version}/mde-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "64281ca74e1ae604e8b822f96300ee106a6e88dcfce2f4fe19ee1935544d1d8c"
+      sha256 "c28d53d6fc4a9db659e01628b9fb596dece86523da5377a428e49a666dac5249"
     end
 
     on_intel do
       url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v#{version}/mde-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d6aa3d77d9a73a15d6e8728a1d9ff0f5f778c199cf039bb9e66fb161ccc37e00"
+      sha256 "35c4cc1a5458a9c6310d4e204ec5d4cc018a5ecbb4f0f27358cc29e4a03d5422"
     end
   end
 
