@@ -1,30 +1,30 @@
 class FalconCli < Formula
   desc "A CLI tool for CrowdStrike Falcon API"
   homepage "https://github.com/hiboma/falcon-cli"
-  version "0.7.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/hiboma/falcon-cli/releases/download/v#{version}/falcon-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "9f2efe11c12c9c803d29f5ea4271dd424a80aaeefe603577f2ea591ad47cc85e"
+      sha256 "33a36ea7f0b241c941b8f7a351a693abcec5ffa227837ae5cf7dd078f285e5a2"
     end
 
     on_intel do
       url "https://github.com/hiboma/falcon-cli/releases/download/v#{version}/falcon-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "b2ac7741046e3aa6f40c4d670214614a90a85faa9bd8dc3215bd76f1eca2cb19"
+      sha256 "7cf5e3a0b8a946036e498b7797ea3d1aa463f65bf73ecc2429e68c659777420e"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/hiboma/falcon-cli/releases/download/v#{version}/falcon-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3d86d2d395271e8008a02bc4a2af68dd87c9caad665f09efc45c902eea6bd787"
+      sha256 "3d7e089e4306d375f84d9d5d2ff16003e2069828fbde888390571110e833f64d"
     end
 
     on_intel do
       url "https://github.com/hiboma/falcon-cli/releases/download/v#{version}/falcon-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "822c63e9b88098ad9a2b8cb201abe1aff74df98201f4e2954a2fa534ee935608"
+      sha256 "b134d37bb5b8872493126e6148437ea1b05f201a069d6b73d756e96dba44bad4"
     end
   end
 
