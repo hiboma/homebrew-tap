@@ -1,30 +1,30 @@
 class WazuhCli < Formula
   desc "A command-line tool for the Wazuh REST API (v4.x), written in Rust"
   homepage "https://github.com/hiboma/wazuh-cli"
-  version "0.1.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/hiboma/wazuh-cli/releases/download/v#{version}/wazuh-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "810d79be5daa792f0decd8c6972790609559e59382cd8303b7b4ba1a87c02f90"
+      sha256 "d5ee32299efa6f08062d42c05f4ffeadde5d5a65ed736f46098173520ecd42c2"
     end
 
     on_intel do
       url "https://github.com/hiboma/wazuh-cli/releases/download/v#{version}/wazuh-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "8317e3fbfb846b95c6a84d1ac3a88988f19392464362ce79970e8ed15ba269d7"
+      sha256 "341eeaf81e05fcec262d680a57e8a37a735e346e0f31e1a626d1583283dbf14e"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/hiboma/wazuh-cli/releases/download/v#{version}/wazuh-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0e11130e75136bc35073e34eb88bf363132584b2723d55fd3c6e409044a6ba90"
+      sha256 "d743791567eb6d2c2ed50720c0f60d5c1a87ecdf6fdf95e18783bdeee985ece1"
     end
 
     on_intel do
       url "https://github.com/hiboma/wazuh-cli/releases/download/v#{version}/wazuh-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "cf22d871c0ee7029b4c82c5a102da3c5ce226654bc9d88d49059c4785c828b96"
+      sha256 "f2cfb50473655fc1664e7f665eb659889e0c551c66b1c9415e36941200b37c9f"
     end
   end
 
