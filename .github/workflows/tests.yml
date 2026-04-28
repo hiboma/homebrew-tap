@@ -31,4 +31,4 @@ jobs:
           ln -s "$GITHUB_WORKSPACE/source" "$tap_dir"
 
       - name: Run brew audit
-        run: brew audit --online --tap=hiboma/tap
+        run: brew audit --strict --online --tap=hiboma/tap
