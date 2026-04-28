@@ -1,5 +1,5 @@
 class CqlLint < Formula
-  desc "A linter for CrowdStrike LogScale (CQL)"
+  desc "Linter for CrowdStrike LogScale (CQL)"
   homepage "https://github.com/hiboma/cql-lint"
   version "0.1.1"
   license "MIT"

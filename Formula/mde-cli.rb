@@ -1,5 +1,5 @@
 class MdeCli < Formula
-  desc "A command-line tool for Microsoft Defender for Endpoint, written in Rust"
+  desc "Command-line tool for Microsoft Defender for Endpoint, written in Rust"
   homepage "https://github.com/hiboma/microsoft-defender-for-endpoint-cli"
   version "0.10.0"
   license "MIT"

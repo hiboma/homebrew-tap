@@ -1,5 +1,5 @@
 class WazuhCli < Formula
-  desc "A command-line tool for the Wazuh REST API (v4.x), written in Rust"
+  desc "Command-line tool for the Wazuh REST API (v4.x), written in Rust"
   homepage "https://github.com/hiboma/wazuh-cli"
   version "0.3.0"
   license "MIT"

@@ -1,5 +1,5 @@
 class FalconCli < Formula
-  desc "A CLI tool for CrowdStrike Falcon API"
+  desc "CLI tool for CrowdStrike Falcon API"
   homepage "https://github.com/hiboma/falcon-cli"
   version "0.10.0"
   license "MIT"

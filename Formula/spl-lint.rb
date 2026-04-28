@@ -1,5 +1,5 @@
 class SplLint < Formula
-  desc "A linter for Splunk Search Processing Language (SPL / SPL2)"
+  desc "Linter for Splunk Search Processing Language (SPL / SPL2)"
   homepage "https://github.com/hiboma/spl-lint"
   version "0.1.2"
   license "MIT"

@@ -36,6 +36,6 @@ class Ccfind < Formula
   end
 
   test do
-    assert_match "session", shell_output("#{bin}/ccfind --list 2>&1", 0)
+    assert_match "session", shell_output("#{bin}/ccfind --list 2>&1")
   end
 end

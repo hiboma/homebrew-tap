@@ -1,5 +1,5 @@
 class CloudappsCli < Formula
-  desc "A CLI tool for cloudapps"
+  desc "CLI tool for cloudapps"
   homepage "https://github.com/hiboma/cloudapps-cli"
   version "0.9.2"
   license "MIT"
