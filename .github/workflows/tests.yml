@@ -1,0 +1,40 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  style:
+    name: brew style
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@f1cc9df7a62b7f6244414d21a3ebc3ba9156a082 # master 2026-04-28
+
+      - name: Run brew style
+        run: brew style "$GITHUB_WORKSPACE"
+
+  audit:
+    name: brew audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@f1cc9df7a62b7f6244414d21a3ebc3ba9156a082 # master 2026-04-28
+
+      - name: Tap this repository
+        run: brew tap hiboma/tap "$GITHUB_WORKSPACE"
+
+      - name: Run brew audit
+        run: brew audit --strict --online --tap=hiboma/tap

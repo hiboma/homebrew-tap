@@ -20,6 +20,8 @@ require "fileutils"
 
 class FormulaUpdater
   REPO_ROOT = File.expand_path("..", __dir__)
+  FORMULA_NAME_PATTERN = /\A[a-z0-9][a-z0-9-]*\z/.freeze
+  VERSION_PATTERN = /\A[0-9A-Za-z][0-9A-Za-z.+-]*\z/.freeze
 
   def initialize(formula_name, version)
     @formula_name = formula_name
@@ -41,6 +43,14 @@ class FormulaUpdater
   private
 
   def validate!
+    unless @formula_name.match?(FORMULA_NAME_PATTERN)
+      abort "Error: Invalid formula name: #{@formula_name.inspect} (expected /#{FORMULA_NAME_PATTERN.source}/)"
+    end
+
+    unless @version.match?(VERSION_PATTERN)
+      abort "Error: Invalid version: #{@version.inspect} (expected /#{VERSION_PATTERN.source}/)"
+    end
+
     unless File.exist?(@formula_file)
       abort "Error: Formula file not found: #{@formula_file}"
     end

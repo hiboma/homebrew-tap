@@ -35,3 +35,13 @@ brew install hiboma/tap/spl-lint
 brew install hiboma/tap/splunk-cloud-cli
 brew install hiboma/tap/wazuh-cli
 ```
+
+## Updating Formulas
+
+Formula の `version` と `sha256` は `scripts/update-formula.rb` 経由でのみ更新します。手動編集はサプライチェーンの整合性を損なうため行いません。
+
+```sh
+ruby scripts/update-formula.rb <formula-name> <version>
+```
+
+詳細は [CLAUDE.md](CLAUDE.md) を参照してください。
