@@ -20,6 +20,8 @@ require "fileutils"
 
 class FormulaUpdater
   REPO_ROOT = File.expand_path("..", __dir__)
+  FORMULA_NAME_PATTERN = /\A[a-z0-9][a-z0-9-]*\z/.freeze
+  VERSION_PATTERN = /\A[0-9A-Za-z][0-9A-Za-z.+-]*\z/.freeze
 
   def initialize(formula_name, version)
     @formula_name = formula_name
@@ -41,6 +43,14 @@ class FormulaUpdater
   private
 
   def validate!
+    unless @formula_name.match?(FORMULA_NAME_PATTERN)
+      abort "Error: Invalid formula name: #{@formula_name.inspect} (expected /#{FORMULA_NAME_PATTERN.source}/)"
+    end
+
+    unless @version.match?(VERSION_PATTERN)
+      abort "Error: Invalid version: #{@version.inspect} (expected /#{VERSION_PATTERN.source}/)"
+    end
+
     unless File.exist?(@formula_file)
       abort "Error: Formula file not found: #{@formula_file}"
     end
@@ -109,11 +119,19 @@ class FormulaUpdater
 
     content = File.read(@formula_file)
 
-    # version を更新する
-    old_version = content.match(/version\s+"([^"]+)"/)[1]
-    content.sub!(/version\s+"[^"]+"/, "version \"#{@version}\"")
+    if content.match?(/^\s*version\s+"/)
+      # Pattern A: version "X" 行があり URL は #{version} で参照する
+      content.sub!(/version\s+"[^"]+"/, "version \"#{@version}\"")
+      old_version_for_url = nil
+    else
+      # Pattern B: version 行はなく URL に旧バージョン文字列が直書きされている
+      old_version_for_url = detect_old_version_from_urls(content)
+      content = content.gsub(old_version_for_url, @version) if old_version_for_url
+    end
 
-    # #{version} を展開した URL からファイル名を抽出し、対応する sha256 を更新する
+    # 各 url 行のファイル名を抽出し、対応する sha256 を更新する
+    # Pattern A では #{version} を新バージョンに展開した URL を使用する
+    # Pattern B では既に上の gsub で URL が新バージョンに置換済み
     expanded = content.gsub('#{version}', @version)
     lines = expanded.lines
     original_lines = content.lines
@@ -139,6 +157,18 @@ class FormulaUpdater
     File.write(@formula_file, original_lines.join)
     puts "Done."
     puts
+  end
+
+  # version 行が省略された Formula で、URL に直書きされている旧バージョン文字列を抽出する。
+  # `releases/download/v<X>/...-v<X>-...` の形を期待し、両者が一致しなければ abort する。
+  def detect_old_version_from_urls(content)
+    versions = content.scan(%r{releases/download/v([0-9A-Za-z][0-9A-Za-z.+-]*)/}).flatten.uniq
+    if versions.empty?
+      abort "Error: Could not detect existing version from URLs in #{@formula_file}"
+    elsif versions.length > 1
+      abort "Error: Multiple versions found in URLs in #{@formula_file}: #{versions.join(', ')}"
+    end
+    versions.first
   end
 
   def update_readme
