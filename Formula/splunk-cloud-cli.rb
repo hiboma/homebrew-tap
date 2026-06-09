@@ -5,25 +5,25 @@ class SplunkCloudCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/hiboma/splunk-cloud-cli/releases/download/v0.3.0/splunk-cloud-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "8b4c8fb9a7b46f620b98176c7ad9bf47d504ed34678b65c618fb930c3922909b"
+      url "https://github.com/hiboma/splunk-cloud-cli/releases/download/v0.4.0/splunk-cloud-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "302eb4bd709d048242699ffb8a61ccfac4064224d66737a73f53422651cb66f6"
     end
 
     on_intel do
-      url "https://github.com/hiboma/splunk-cloud-cli/releases/download/v0.3.0/splunk-cloud-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "2f33930403026e8e48b62c10a0ca01bc2a6dcb71c2798ae04719a96a6a34062f"
+      url "https://github.com/hiboma/splunk-cloud-cli/releases/download/v0.4.0/splunk-cloud-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "d58cc10215ba30b721b2ef56fa105cb5d18d13919a6c29e991ddda384cf328bb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/hiboma/splunk-cloud-cli/releases/download/v0.3.0/splunk-cloud-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "05c39a2b815324fa026533d811468d2af935e10a1fb15a96e510a00f87162de3"
+      url "https://github.com/hiboma/splunk-cloud-cli/releases/download/v0.4.0/splunk-cloud-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2f974e5a353e0bd8e5070d42b4974fe0084c41ecec8403cfd00c989bca4302ab"
     end
 
     on_intel do
-      url "https://github.com/hiboma/splunk-cloud-cli/releases/download/v0.3.0/splunk-cloud-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6867c5ea6c517d0e4088bc75e5135a4feb0c60369f9cf350c3117077fc31a7fe"
+      url "https://github.com/hiboma/splunk-cloud-cli/releases/download/v0.4.0/splunk-cloud-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7f91d1bb75658a12600eb53067d849aaaaabe8a4994aab55cc56bb616b9ae20c"
     end
   end
 

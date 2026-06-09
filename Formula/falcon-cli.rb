@@ -5,25 +5,25 @@ class FalconCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/hiboma/falcon-cli/releases/download/v0.10.0/falcon-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "4f2450c36f81eb6615ce978c5178afa154bdc11e5d4caea41465c6d0a1d1f186"
+      url "https://github.com/hiboma/falcon-cli/releases/download/v0.10.1/falcon-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "834c96bd19790c3134880276f26fb7121a20e91ba972256a07a5d033709dbf1d"
     end
 
     on_intel do
-      url "https://github.com/hiboma/falcon-cli/releases/download/v0.10.0/falcon-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "9ce63bbca130f10f9dda15e00ed93c6bd606b3337a4c0a2740459865380cdf4b"
+      url "https://github.com/hiboma/falcon-cli/releases/download/v0.10.1/falcon-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "ab0f86d52216334140d82720229e0db85815360365838c6a35299de8a678d1fe"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/hiboma/falcon-cli/releases/download/v0.10.0/falcon-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "877a226850f09bf18ece41c8fc69412d181e46fe8e6463544912c55726ba6149"
+      url "https://github.com/hiboma/falcon-cli/releases/download/v0.10.1/falcon-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "90356359806f91f7e5aa3c073e7c47c36ff0164ae6c0587db87ad1e39e2b9e02"
     end
 
     on_intel do
-      url "https://github.com/hiboma/falcon-cli/releases/download/v0.10.0/falcon-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c6400b64d1222148b7686f881d5ba3966a55ea3625eed69b2ddff1df3517c127"
+      url "https://github.com/hiboma/falcon-cli/releases/download/v0.10.1/falcon-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5e8cceb0844df920effda533bc25a0704dc1dfa0fbcf9d148f91a662bcef15bd"
     end
   end
 
