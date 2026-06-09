@@ -5,25 +5,25 @@ class MdeCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v0.11.0/mde-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "46c531cd5577e57a0d7253db684d0b577158880f4ae8c30fe495d0fec2f31a12"
+      url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v0.12.0/mde-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "9e4d14ac34ffe817eff89bc2e288fa58c488576a810295442f623b93de61b16c"
     end
 
     on_intel do
-      url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v0.11.0/mde-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "53c9f1c8472386294500631bddbaa2ab88da5813a41723a018ee48a1e6d0da65"
+      url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v0.12.0/mde-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "d7aee9dc346b9825b3c30f1145ea73a633459106e4a8d535e60cad0502cedb7b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v0.11.0/mde-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "dc6cc465e2cdcf88b8dfc10bf908c205a3736244c0537a3cb5fd03156490fea0"
+      url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v0.12.0/mde-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "48ad07d86fce22763e2f9d232c33bb99153564711ada406855cb56e16ea01de3"
     end
 
     on_intel do
-      url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v0.11.0/mde-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2a75d248f2392b934e5d4f9c2d2357a4658ca3e94cfe083ad856b98978b4a059"
+      url "https://github.com/hiboma/microsoft-defender-for-endpoint-cli/releases/download/v0.12.0/mde-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f75a1c7a55a8bd5bfed5725687cee7586c0b10fa5d8407780ee1663349e0b638"
     end
   end
 

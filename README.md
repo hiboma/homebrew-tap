@@ -16,19 +16,23 @@ brew tap hiboma/tap
 
 | Formula | Description | Version |
 |---------|-------------|---------|
-| [cloudapps-cli](https://github.com/hiboma/cloudapps-cli) | CLI tool for cloudapps | 0.9.2 |
+| [ccfind](https://github.com/hiboma/ccfind) | Fuzzy finder for Claude Code named sessions | 0.1.0 |
+| [cloudapps-cli](https://github.com/hiboma/cloudapps-cli) | CLI tool for cloudapps | 0.9.3 |
 | [cql-lint](https://github.com/hiboma/cql-lint) | Linter for CrowdStrike LogScale (CQL) | 0.1.1 |
-| [falcon-cli](https://github.com/hiboma/falcon-cli) | CLI tool for CrowdStrike Falcon API | 0.10.0 |
-| [mde-cli](https://github.com/hiboma/microsoft-defender-for-endpoint-cli) | Command-line tool for Microsoft Defender for Endpoint, written in Rust | 0.11.0 |
+| [entraws](https://github.com/hiboma/entraws) | Obtain temporary AWS credentials via OpenID Connect (Entra ID, Okta, Auth0, and more) | 0.1.1 |
+| [falcon-cli](https://github.com/hiboma/falcon-cli) | CLI tool for CrowdStrike Falcon API | 0.10.1 |
+| [mde-cli](https://github.com/hiboma/microsoft-defender-for-endpoint-cli) | Command-line tool for Microsoft Defender for Endpoint, written in Rust | 0.12.0 |
 | [spl-lint](https://github.com/hiboma/spl-lint) | Linter for Splunk Search Processing Language (SPL / SPL2) | 0.1.2 |
-| [splunk-cloud-cli](https://github.com/hiboma/splunk-cloud-cli) | CLI for Splunk Cloud Platform REST API (Victoria Experience), written in Rust | 0.3.0 |
+| [splunk-cloud-cli](https://github.com/hiboma/splunk-cloud-cli) | CLI for Splunk Cloud Platform REST API (Victoria Experience), written in Rust | 0.4.0 |
 | [wazuh-cli](https://github.com/hiboma/wazuh-cli) | Command-line tool for the Wazuh REST API (v4.x), written in Rust | 0.3.0 |
 
 ## Install
 
 ```sh
+brew install hiboma/tap/ccfind
 brew install hiboma/tap/cloudapps-cli
 brew install hiboma/tap/cql-lint
+brew install hiboma/tap/entraws
 brew install hiboma/tap/falcon-cli
 brew install hiboma/tap/mde-cli
 brew install hiboma/tap/spl-lint
