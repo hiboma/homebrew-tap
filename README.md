@@ -17,7 +17,7 @@ brew tap hiboma/tap
 | Formula | Description | Version |
 |---------|-------------|---------|
 | [ccfind](https://github.com/hiboma/ccfind) | Fuzzy finder for Claude Code named sessions | 0.1.0 |
-| [cloudapps-cli](https://github.com/hiboma/cloudapps-cli) | CLI tool for cloudapps | 0.9.3 |
+| [cloudapps-cli](https://github.com/hiboma/cloudapps-cli) | CLI tool for cloudapps | 0.10.0 |
 | [cql-lint](https://github.com/hiboma/cql-lint) | Linter for CrowdStrike LogScale (CQL) | 0.1.1 |
 | [entraws](https://github.com/hiboma/entraws) | Obtain temporary AWS credentials via OpenID Connect (Entra ID, Okta, Auth0, and more) | 0.1.1 |
 | [falcon-cli](https://github.com/hiboma/falcon-cli) | CLI tool for CrowdStrike Falcon API | 0.10.1 |
