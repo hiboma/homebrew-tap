@@ -20,7 +20,7 @@ brew tap hiboma/tap
 | [cloudapps-cli](https://github.com/hiboma/cloudapps-cli) | CLI tool for cloudapps | 0.10.0 |
 | [cql-lint](https://github.com/hiboma/cql-lint) | Linter for CrowdStrike LogScale (CQL) | 0.1.1 |
 | [entraws](https://github.com/hiboma/entraws) | Obtain temporary AWS credentials via OpenID Connect (Entra ID, Okta, Auth0, and more) | 0.1.1 |
-| [falcon-cli](https://github.com/hiboma/falcon-cli) | CLI tool for CrowdStrike Falcon API | 0.10.1 |
+| [falcon-cli](https://github.com/hiboma/falcon-cli) | CLI tool for CrowdStrike Falcon API | 0.11.0 |
 | [mde-cli](https://github.com/hiboma/microsoft-defender-for-endpoint-cli) | Command-line tool for Microsoft Defender for Endpoint, written in Rust | 0.12.0 |
 | [spl-lint](https://github.com/hiboma/spl-lint) | Linter for Splunk Search Processing Language (SPL / SPL2) | 0.1.2 |
 | [splunk-cloud-cli](https://github.com/hiboma/splunk-cloud-cli) | CLI for Splunk Cloud Platform REST API (Victoria Experience), written in Rust | 0.4.0 |
