@@ -24,7 +24,7 @@ brew tap hiboma/tap
 | [mde-cli](https://github.com/hiboma/microsoft-defender-for-endpoint-cli) | Command-line tool for Microsoft Defender for Endpoint, written in Rust | 0.13.0 |
 | [spl-lint](https://github.com/hiboma/spl-lint) | Linter for Splunk Search Processing Language (SPL / SPL2) | 0.1.2 |
 | [splunk-cloud-cli](https://github.com/hiboma/splunk-cloud-cli) | CLI for Splunk Cloud Platform REST API (Victoria Experience), written in Rust | 0.5.0 |
-| [wazuh-cli](https://github.com/hiboma/wazuh-cli) | Command-line tool for the Wazuh REST API (v4.x), written in Rust | 0.3.0 |
+| [wazuh-cli](https://github.com/hiboma/wazuh-cli) | Command-line tool for the Wazuh REST API (v4.x), written in Rust | 0.4.0 |
 
 ## Install
 
