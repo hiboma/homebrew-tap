@@ -5,25 +5,25 @@ class WazuhCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/hiboma/wazuh-cli/releases/download/v0.6.0/wazuh-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "e415ad3fa3cedb7c4b87d84dd1edbbe0bace649fa9092aeb2262bb410a5a43fb"
+      url "https://github.com/hiboma/wazuh-cli/releases/download/v0.7.0/wazuh-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "d22f9c8a7a0bf3e821ee3b244e924845749b324f58f318d7ca433609ad744a46"
     end
 
     on_intel do
-      url "https://github.com/hiboma/wazuh-cli/releases/download/v0.6.0/wazuh-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "24d9f38981161272715f097f0e2cfa7cc9db40687def0db07161daa6e786205e"
+      url "https://github.com/hiboma/wazuh-cli/releases/download/v0.7.0/wazuh-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "74a06bdca73f477ef219b4f62856e77fc855da769ab117e2b164ac356effb2c4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/hiboma/wazuh-cli/releases/download/v0.6.0/wazuh-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "df53fe7104532a44960f814d4982d56485f4d63a12f6ac9bd09a4bed2b1daad5"
+      url "https://github.com/hiboma/wazuh-cli/releases/download/v0.7.0/wazuh-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "77a84ba7fda44d6ba01620945c9aabe376acd877347416c0d6404fb6a57a35ed"
     end
 
     on_intel do
-      url "https://github.com/hiboma/wazuh-cli/releases/download/v0.6.0/wazuh-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d397b6726f6628ca676f7aa595f4afc11d3b20db6fcb2e63104ee8772e3ffd74"
+      url "https://github.com/hiboma/wazuh-cli/releases/download/v0.7.0/wazuh-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "65a436ee047be86a208cd465f1dc583924609da378dcc55ae9b0956811dd3b31"
     end
   end
 

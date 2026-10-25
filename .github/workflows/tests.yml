@@ -30,5 +30,11 @@ jobs:
           rm -rf "$tap_dir"
           ln -s "$GITHUB_WORKSPACE/source" "$tap_dir"
 
+      # Homebrew requires tap trust by default and refuses to load
+      # formulae from an untrusted non-official tap. This job audits
+      # this repository's own formulae, so trust the whole tap.
+      - name: Trust tap
+        run: brew trust --tap hiboma/tap
+
       - name: Run brew audit
         run: brew audit --strict --online --tap=hiboma/tap
